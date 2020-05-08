@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Facebook Controversies</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel= "stylesheet" type= "text/css" href= "/static/styles/project_page.css">
+   </head>
+   <body>
+      <nav>
+         <p>CSCI E-7 Final Project May 2020</p>
+      </nav>
+
+      <header class="container px-5 py-5">
+         <h1>Facebook Controversies of the Last Decade: An Overview</h1>
+         <div class="byline">
+            By Jamal Merritt
+         </div>
+      </header>
+
+      <section class="container px-7 py-7">
+         <p class="text-left mb-6">
+            How can we better understand Facebook controversies - specifically those related to war crimes, violence,
+            and harmful data practices - over the past 10 years?
+            <br/>
+            This project aims to answer that question through using Python's matplotlib, pandas, and numpy libraries
+            to construct a visual representation of Facebook's political mishaps over the last decade. Using a self-
+            created csv file* [composed a sample of 50 randomly selected controversial events involving Facebook
+            within the last decade], three key figures were generated for use in the project: a scatterplot depicting
+            the number of major political Facebook Controversies over the last year, a timeline generated via a
+            stemline plot, and a table of values.
+         </p>
+      </section>
+
+      <section class="break">
+         <p>
+            <br/>
+            <br/>
+            <br/>
+         </p>
+      </section>
+
+      <section class="container px-7 py-7">
+         <div class="row">
+
+            <div class="col-lg-6 mb-6">
+               <h4 class="text-left">Figure 1: Scatter Plot of Number of Major Controversies Per Year</h4>
+               <p class="text-left py-7 mt-7 mb-7">
+                  This scatterplot depicts the relationship between the frequency of controversies and the year.
+                  As evident in the plot, the number of controversies that Facebook has been involved in has increased
+                  overall in recent years. The largest increase in the number of reported events from this sample was
+                  in 2018 ( a growth of 5). The infamous Facebook Cambridge Analytica scandal occured during that year.
+               </p>
+            </div>
+
+            <div class="col-lg-6 mb-6">
+               <img src= static/timeline_plot.png alt="FB Controversies Plot" height="100%" width="100%">
+            </div>
+
+         </div>
+      </section>
+
+      <section class="break">
+         <p>
+            <br/>
+            <br/>
+            <br/>
+         </p>
+      </section>
+
+      <section class="container px-7 py-7">
+         <div class="row">
+
+            <div class="col-lg-8 mb-6">
+               <img src= static/time_table.png alt="FB Controversies Time Series" height="100%" width="100%">
+            </div>
+
+            <div class="col-lg-4 mb-6">
+               <h4 class="text-left">Figure 2: Timeline of Facebook Controversies in the Last Decade</h4>
+               <p class="text-left">
+                  This timeline stemplot is a visual representation of controversies involving Facebook from
+                  2010 - 2020. A large number of the events cluster within the August 2018 - July 2019 period.
+               </p>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="break">
+         <p>
+            <br/>
+            <br/>
+            <br/>
+         </p>
+      </section>
+
+      <section class="container px-7 py-7">
+         <h4>Figure 3: Data Table of Observations Used in Project</h4>
+         <p>The data used in the project is shown in the data table below. A sample of 50 observations (controversies)
+            were selected.
+         </p>
+         <div class="text-center mb-6">
+            
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Full Date</th>
+      <th>Year</th>
+      <th>Description of Event</th>
+    </tr>
+    <tr>
+      <th>Name of Event or Controversy</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Employee Joint Lawsuit in Florida</th>
+      <td>2020-02-06</td>
+      <td>2020</td>
+      <td>Employees in Tampa, Florida filed a lawsuit against Facebook and Cognizant alleging they developed PTSD and related mental health impairments as a result of constant and unmitigated exposure to disturbing content.</td>
+    </tr>
+    <tr>
+      <th>Hungarian Competition Authority</th>
+      <td>2019-12-20</td>
+      <td>2019</td>
+      <td>Hungarian Competition Authority fined Facebook around US$4 million for false advertising, ruling that Facebook cannot market itself as being a "free" (no cost) service.</td>
+    </tr>
+    <tr>
+      <th>Unencrypted Password Storage</th>
+      <td>2019-03-30</td>
+      <td>2019</td>
+      <td>Facebook admitted that it had mistakenly stored "hundreds of millions" of passwords of Facebook and Instagram users in plaintext on multiple internal systems accessible only to Facebook engineers.</td>
+    </tr>
+    <tr>
+      <th>Refusal to Remove Anti-Semitism Images</th>
+      <td>2019-03-29</td>
+      <td>2019</td>
+      <td>Facebook subsidiary Instagram declined to remove an anti-semitic image posted by right-wing conspiracy theorist Alex Jones, saying that it did not violate their community standards.</td>
+    </tr>
+    <tr>
+      <th>Lawsuit on Housing Discrimination</th>
+      <td>2019-03-28</td>
+      <td>2019</td>
+      <td>The U.S. Department of Housing and Urban Development (HUD) filed a lawsuit against Facebook. The HUD also took issue with Facebook's tendency to deliver ads based on users having "particular characteristics [that are] most likely to engage with the ad".</td>
+    </tr>
+    <tr>
+      <th>Revision of Content Policy</th>
+      <td>2019-03-27</td>
+      <td>2019</td>
+      <td>Facebook's initial internal policy was to permit "white nationalist" content but not "white supremacist" content. Facebook then backtracked and stated that white nationalism "cannot be meaningfully separated from white supremacy and organized hate groups".</td>
+    </tr>
+    <tr>
+      <th>Critical Content Censorship</th>
+      <td>2019-03-11</td>
+      <td>2019</td>
+      <td>Facebook removed a number of ads placed by Sen. Elizabeth Warrens presidential campaign, according to Politico. The ads targeted tech companies like Amazon, Google, and Facebook and were placed after Warren announced that she would work to break up the firms by reversing large acquisitions.</td>
+    </tr>
+    <tr>
+      <th>Health App Data Scandal</th>
+      <td>2019-02-22</td>
+      <td>2019</td>
+      <td>It emerged that a number of Facebook apps, including Flo, had been sending users' health data such as blood pressure and ovulation status to Facebook without users' informed consent.</td>
+    </tr>
+    <tr>
+      <th>International Anti-Privacy Lobbying</th>
+      <td>2019-02-03</td>
+      <td>2019</td>
+      <td>It was reported that Facebook had spent years lobbying extensively against privacy protection laws around the world, such as the General Data Protection Regulation (GDPR).</td>
+    </tr>
+    <tr>
+      <th>Project Atlas</th>
+      <td>2019-01-30</td>
+      <td>2019</td>
+      <td>Apple temporarily revoked Facebook's Enterprise Developer Program certificates for one day, due to an article published by Tech Crunch on its Project Atlas app - a market research program aimed at teenagers.</td>
+    </tr>
+    <tr>
+      <th>Private Message Data Scandal</th>
+      <td>2018-12-30</td>
+      <td>2018</td>
+      <td>It emerged that Facebook had, during the period 20102018, granted access to users' private messages, address book contents, and private posts, without the users' consent, to more than 150 third parties including Microsoft, Amazon, Yahoo, Netflix, and Spotify.</td>
+    </tr>
+    <tr>
+      <th>Denial of Location Privacy</th>
+      <td>2018-12-19</td>
+      <td>2018</td>
+      <td>It emerged that Facebook's mobile app reveals the user's location to Facebook, even if the user does not use the "check in" feature and has configured all relevant settings within the app so as to maximize location privacy.</td>
+    </tr>
+    <tr>
+      <th>Myanmar Abuses</th>
+      <td>2018-12-15</td>
+      <td>2018</td>
+      <td>Facebook removed accounts owned by the Myanmar Armed Forces for abuse and inciting hatred against the Rohingya people, and engaging in coordinated inauthentic behavior.</td>
+    </tr>
+    <tr>
+      <th>Competitor Treatment</th>
+      <td>2018-12-10</td>
+      <td>2018</td>
+      <td>The UK parliament member Damian Collins released files from a court ruling between Six4Three and Facebook. According to those files, the social media company Twitter released its app Vine in 2013. Facebook blocked Vine's Access to its data.</td>
+    </tr>
+    <tr>
+      <th>Blocking Competitors</th>
+      <td>2018-10-13</td>
+      <td>2018</td>
+      <td>Facebook and Facebook Messenger is said to be blocking urls to minds.com, a social network website that is a competitor of Facebook. Users have complained that Facebook marks links to Facebook's competitor as "insecure" and have to fill a captcha to share it with other users.</td>
+    </tr>
+    <tr>
+      <th>Ethnic Affinity Exclusion Policies</th>
+      <td>2018-08-24</td>
+      <td>2018</td>
+      <td>Facebook permanently removed the ability to create exclusions based on multicultural affinities. Later Facebook signed a legally binding agreement with the State of Washington to take further steps to prevent the use of its advertising platform for housing discrimination against protected classes.</td>
+    </tr>
+    <tr>
+      <th>Cambridge Analytica data scandal</th>
+      <td>2018-03-17</td>
+      <td>2018</td>
+      <td>Facebook admitted that an app made by Global Science Research and Alexandr Kogan, related to Cambridge Analytica, was able to harvest personal data of up to 87 million Facebook users without their consent, by exploiting their friendship connection to the users who sold their data via the app.</td>
+    </tr>
+    <tr>
+      <th>Incitiment of Violence in Sri Lanka</th>
+      <td>2018-03-14</td>
+      <td>2018</td>
+      <td>Sri Lankan telecommunications minister Harin Fernando stated that Facebook had been too slow removing content and banning users who were using its platforms to facilitate violence during the 2018 anti-Muslim riots in Sri Lanka.</td>
+    </tr>
+    <tr>
+      <th>Failure to Remove Violent Libya War Videos</th>
+      <td>2017-08-25</td>
+      <td>2017</td>
+      <td>Facebook has been criticized for failing to take down violent content amounting to war crimes in Libya. A Facebook video of Libyan special forces commander was uploaded showing him shooting dead three captured fighters.   Videos ideos showing the bodies of civilians being desecrated were also discovered.</td>
+    </tr>
+    <tr>
+      <th>Exposure of Terrorism Moderators</th>
+      <td>2017-06-16</td>
+      <td>2017</td>
+      <td>A security lapse exposed the personal details of 1,000 Facebook workers involved in reviewing and removing terrorism content, and forced moderators into hiding.</td>
+    </tr>
+    <tr>
+      <th>Anti-Semitism Double Standards</th>
+      <td>2017-03-08</td>
+      <td>2017</td>
+      <td>ProPublica stated that a website was able to target ads at Facebook users who were interested in "how to burn Jew" and "Jew hater". Facebook later removed the categories and said it would try to stop them from appearing to potential advertisers.</td>
+    </tr>
+    <tr>
+      <th>Napalm Girl Photo</th>
+      <td>2016-09-09</td>
+      <td>2016</td>
+      <td>Norwegian author Tom Egeland published Nick Ut's iconic napalm girl photo on his Facebook page. He was banned for publishing "a picture of a nude child". A few weeks later, the newspaper Aftenposten published an open letter to Zuckerberg. Facebook reconsidered its opinion on this picture and republished it.</td>
+    </tr>
+    <tr>
+      <th>Censorship on Kashmir Freedom Movement</th>
+      <td>2016-07-18</td>
+      <td>2016</td>
+      <td>Facebook banned and also removed content regarding the Kashmir dispute, triggering a response from The Guardian, BBC and other media group on the Facebook's policies on censorship.</td>
+    </tr>
+    <tr>
+      <th>Murder of Hallel Ariel</th>
+      <td>2016-06-30</td>
+      <td>2016</td>
+      <td>Following the murder of Hallel Ariel, 13, by a terrorist who posted on Facebook, Israeli Minister of Public Security Gilad Erdan charged that "Facebook, which has brought a positive revolution to the world, has become a monster."</td>
+    </tr>
+    <tr>
+      <th>Facebook Agree to EU Rules</th>
+      <td>2016-05-31</td>
+      <td>2016</td>
+      <td>Facebook and other technology companies agreed to a new "code of conduct" by the European Commission to review hateful online content within 24 hours of being notified, and subsequently remove such content if necessary.</td>
+    </tr>
+    <tr>
+      <th>E-commerce and drop shipping scams</th>
+      <td>2016-04-05</td>
+      <td>2016</td>
+      <td>Buzzfeed published an article exposing drop shippers who were using Facebook and Instagram to swindle unsuspecting customers in China.</td>
+    </tr>
+    <tr>
+      <th>Lawsuit for Hamas Terrorism Victims</th>
+      <td>2016-03-07</td>
+      <td>2016</td>
+      <td>A civil action for $1 billion in damages was filed in  the Southern District Court of NY on behalf of the victims and family members of four Israeli-Americans and one US citizen killed by Hamas terrorists since June 2014.</td>
+    </tr>
+    <tr>
+      <th>Free Basics In India</th>
+      <td>2016-02-08</td>
+      <td>2016</td>
+      <td>TRAI ruled against differential data pricing for limited services from mobile phone operators effectively ending zero-rating platforms in India. Zero rating provides access to limited number of websites for no charge to the end user. Net-neutrality supporters from India brought out the negative implications of Facebook Free Basic program and spread awareness to the public.</td>
+    </tr>
+    <tr>
+      <th>Non-Member Tracking; Belgium</th>
+      <td>2015-11-09</td>
+      <td>2015</td>
+      <td>Facebook was ordered by the Belgian Privacy Commissioner to cease tracking non-users. As a result, instead of removing tracking cookies, Facebook banned non-users in Belgium from seeing any material on Facebook, including publicly posted content, unless they sign in.</td>
+    </tr>
+    <tr>
+      <th>Palestinian Terrorism Incitement</th>
+      <td>2015-10-27</td>
+      <td>2015</td>
+      <td>20,000 Israelis claimed that Facebook was ignoring Palestinian incitement on its platform and filed a class-action suit demanding that Facebook remove all posts "containing incitement to murder Jews".</td>
+    </tr>
+    <tr>
+      <th>Refusal to Remove Child Abuse Images</th>
+      <td>2015-06-30</td>
+      <td>2015</td>
+      <td>The UK National Society for the Prevention of Cruelty to Children raised concerns about Facebook's apparent refusal when asked to remove controversial video material which allegedly showed a baby in emotional distress.</td>
+    </tr>
+    <tr>
+      <th>Facebook Fraud Video</th>
+      <td>2014-02-10</td>
+      <td>2014</td>
+      <td>Derek Muller used his YouTube account Veritasium to upload a video titled "Facebook Fraud" to call out Facebook's illegitimate paid advertising service.</td>
+    </tr>
+    <tr>
+      <th>Violent Video Policy Controversy</th>
+      <td>2013-10-22</td>
+      <td>2013</td>
+      <td>Facebook criticized for its policy on violent videos after refusing to remove a video of a women beheaded by a man in Mexico from its website.</td>
+    </tr>
+    <tr>
+      <th>Kurdish Opposition Censorship</th>
+      <td>2013-08-24</td>
+      <td>2013</td>
+      <td>Facebook has a policy to censor anything related to Kurdish opposition against Turkey, such as maps of Kurdistan, flags of Kurdish armed groups (such as PKK and YPG), and criticism of Mustafa Kemal Atatürk, the founder of Turkey.</td>
+    </tr>
+    <tr>
+      <th>Trojan Horse Malware</th>
+      <td>2013-06-09</td>
+      <td>2013</td>
+      <td>The New York Times reported that increase in malicious links related to the Trojan horse malware program Zeus were identified by Eric Feinberg, founder of the advocacy group Fans Against Kounterfeit Enterprise.</td>
+    </tr>
+    <tr>
+      <th>PRISM Surveillance Program</th>
+      <td>2013-06-08</td>
+      <td>2013</td>
+      <td>The 2013 mass surveillance disclosures identified Facebook as a participant in the U.S. National Security Administration's PRISM program.</td>
+    </tr>
+    <tr>
+      <th>Updated Hate Speech Policies</th>
+      <td>2013-05-29</td>
+      <td>2013</td>
+      <td>A series of pro-rape and 'rape joke' content on Facebook drew attention from the media and women's groups. Facebook agreed to take action  after it had "become clear that our systems to identify and remove hate speech have failed to work as effectively as we would like, particularly around issues of gender-based hate".</td>
+    </tr>
+    <tr>
+      <th>Fake Accounts</th>
+      <td>2012-08-03</td>
+      <td>2012</td>
+      <td>Facebook revealed that more than 83 million Facebook accounts (8.7% of total users) are fake accounts. These fake profiles consist of duplicate profiles, accounts for spamming purposes and personal profiles for business, organization or non-human entities such as pets.</td>
+    </tr>
+    <tr>
+      <th>Click Advertising Fraud</th>
+      <td>2012-07-31</td>
+      <td>2012</td>
+      <td>Startup Limited Run claimed that 80% of its Facebook clicks came from bots. Limited Run co-founder Tom Mango said that they "spent roughly a month testing this" with six web analytics services including Google Analytics and in-house software.</td>
+    </tr>
+    <tr>
+      <th>Lawsuit for Privacy Violations</th>
+      <td>2012-05-18</td>
+      <td>2012</td>
+      <td>Law firm Stewarts Law US combined 21 privacy lawsuits against the social network into a single, class-action suit for $15 billion, charging the world's largest social network with violating user privacy by allegedly tracking their Web usage.</td>
+    </tr>
+    <tr>
+      <th>Breastfeeding Photos</th>
+      <td>2011-12-30</td>
+      <td>2011</td>
+      <td>Facebook removed photos of mothers breastfeeding and after public criticism, restored the photos.</td>
+    </tr>
+    <tr>
+      <th>Tracking Cookies</th>
+      <td>2011-09-25</td>
+      <td>2011</td>
+      <td>Austrian internet security blogger, Nik Cubrilovic, successfully forced Facebook to address a privacy flaw whereby the site would continue to track your web surfing habits even when logged out.</td>
+    </tr>
+    <tr>
+      <th>Investigation by the IDPC</th>
+      <td>2011-08-01</td>
+      <td>2011</td>
+      <td>The Irish Data Protection Commissioner led an investigation on Facebook after receiving 22 complaints by a group of Austrian students. In spring 2012, Facebook had to undertake many privacy policy changes.</td>
+    </tr>
+    <tr>
+      <th>Anti-Google Smear Campaign</th>
+      <td>2011-05-12</td>
+      <td>2011</td>
+      <td>Facebook paid for an anti-Google email campain  sent to journalists and bloggers making critical allegations about Google's privacy policies.</td>
+    </tr>
+    <tr>
+      <th>Young v. Facebook, Inc.</th>
+      <td>2011-05-09</td>
+      <td>2011</td>
+      <td>In Young v. Facebook, Inc., plaintiff Karen Beth Young alleged violations of the Americans with Disabilities Act and related state laws on disability as well as breach of contract and negligence. A District Court judge dismissed the complaint, ruling that Facebook is a website, not a physical place, so the Americans with Disabilities Act does not apply.</td>
+    </tr>
+    <tr>
+      <th>Fraley v. Facebook, Inc.</th>
+      <td>2011-03-11</td>
+      <td>2011</td>
+      <td>Fraley v. Facebook, Inc. was a class-action case that alleged that Facebook had misappropriated users' names and likenesses in advertisements.</td>
+    </tr>
+    <tr>
+      <th>Application Privacy Breach</th>
+      <td>2010-10-18</td>
+      <td>2010</td>
+      <td>The Wall Street Journal found that many of Facebook's top-rated apps were transmitting identifying information to "dozens of advertising and Internet tracking companies" like RapLeaf. The apps used an HTTP referer that exposed the user's identity and sometimes their friends' identities.</td>
+    </tr>
+    <tr>
+      <th>Lifejacking Vulnerability</th>
+      <td>2010-07-28</td>
+      <td>2010</td>
+      <td>BBC reported that security consultant Ron Bowes used a piece of code to scan Facebook profiles to collect data of 100 million profiles. The data collected was not hidden by the user's privacy settings. Bowes said he published the data to highlight privacy issues, but Facebook claimed it was already public information.</td>
+    </tr>
+    <tr>
+      <th>Lane v. Facebook, Inc.</th>
+      <td>2010-03-17</td>
+      <td>2010</td>
+      <td>Judge Richard Seeborg issued an order approving the class settlement in Lane v. Facebook, Inc. This lawsuit charged that user's private information was being posted on Facebook without consent using Facebook's Beacon program</td>
+    </tr>
+    <tr>
+      <th>DAB of Hong Kong Censorship</th>
+      <td>2010-02-04</td>
+      <td>2010</td>
+      <td>A number of Facebook groups against the Democratic Alliance for the Betterment and Progress of Hong Kong (DAB) were removed without any reason given. The DAB is one of the largest pro-Beijing political parties in Hong Kong. The affected groups have since been restored.</td>
+    </tr>
+  </tbody>
+</table>
+            
+         </div>
+      </section>
+
+      <section class="break">
+         <p>
+            <br/>
+            <br/>
+            <br/>
+         </p>
+      </section>
+
+      <section class="container px-5 py-5">
+         <h4>Citations</h4>
+         <p>
+            "Criticism of Facebook" - https://en.wikipedia.org/wiki/Criticism_of_Facebook <br/>
+         </p>
+      </section>
+
+   </body> 
+</html>
